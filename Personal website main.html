@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal portfolio Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/949d3ea207.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="navebar.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="Images/logonew.jpg" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>ML Developer</p>
+        <h1>Hi,I'am<span>Aljo</span><br>Jose From India</h1>
+      </div>
+    </div>
+  </div>
+
+<!----------------about----------------------------->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="Images/Usernew.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About me</h1>
+          <p>Passionate Electronics & Communication Engineer | Enthusiastic about IT and Programming | Python and Core Java Enthusiast with Strong Logic and Problem-Solving Skills</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Basic C and Java</span><br>Designing Web interfaces</li>
+              <li><span>Web Development</span><br>Website development</li>
+              <li><span>ML Developer</span><br>Expert on using data and training models</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2024 - Current</span><br>ML Engineer at Accenture</li>
+              <li><span>2023 - 2024</span><br>Trainee ML Developer</li>
+              <li><span>2019 - 2020</span><br>Instrument Technician at ATC Private Limited</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2023</span><br>ML developer training from Brototype</li>
+              <li><span>2023</span><br>B-Tech in Electronics and Communication</li>
+              <li><span>2019</span><br>Dipoma in Instrumentation Engineering</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--------------services----------------->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>passionate about crafting visually appealing and user-friendly websites that leave a lasting impression. My skills and capabilities include:</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Training and Workshops</h2>
+          <p> I offer training sessions and workshops to help your team understand machine learning concepts, tools, and best practices.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Data Visualization</h2>
+          <p> I create interactive data visualizations to help you gain insights from your data and present complex information in a user-friendly way.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-----------------------portfolio---------------------->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+        <div class="worklist">
+          <div class="work">
+            <img src="Images/work-1.png">
+            <div class="layer">
+              <h3>Content Moderation</h3>
+              <p>ML models can automatically filter or moderate user-generated content to ensure it adheres to community guidelines.</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-2.png">
+            <div class="layer">
+              <h3>User Authentication</h3>
+              <p>Biometric authentication methods, such as facial recognition or fingerprint scanning, often rely on ML for accuracy and security.</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-3.png">
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>The app suggst you the preferred produts to you</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!------------------------contact-------------------------->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>aljoemmanu22@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>9497515906</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/aljo.jose.18"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/AljoJose19?t=BSRNATzR-UIOzeBWdQaw7A&s=35"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://instagram.com/aljo_jose_?utm_source=qr&igshid=MThlNWY1MzQwNA=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/aljo-jose-b35393168"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="Images/Aljo's Resume (2).pdf" download class="btn btn2"> Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Aljo. Made with <i class="fa-solid fa-heart"></i>Easy</p>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  
+    
+  </script>
+  <script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemeu.style.right = "0";
+    }
+    function closemenu(){
+      sidemeu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzfE0OLuuRaibEXm7YFd2ajiHpSQoPNDnZ30cEakQt2ST9ZbA1YjofXn58pdVB-hjfj2w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message Sent Successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
